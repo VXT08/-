@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #fff;
+    color: #272727;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url("../img/back.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #CCE59D;
+    padding: 25vh 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@keyframes color-change {
+    0% {
+      background-color: #CCE59D;
+    }
+  
+    50% {
+        background-color: #9ebe64;
+      }
+    
+      100% {
+        background-color: #CCE59D;
+      }
+}
+
+@keyframes color-change2 {
+    0% {
+      color: #272727;
+    }
+  
+    50% {
+        color: #444444;
+      }
+    
+      100% {
+        color: #272727;
+      }
+}
+
+header {
+    animation: color-change 14s infinite;
+}
+
+h1 {
+    animation: color-change2 14s infinite;
+}
+
+body {
+    animation: color-change 10s infinite;
+}
+
+label { 
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 24px;
+    line-height: 125%;
+   }
+
+h1 { 
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 40px;
+    line-height: 125%;
+   }
+
+h2 { 
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 36px;
+    line-height: 125%;
+   }
+
+p {
+    font-family: Bradley Hand, cursive;
+}
+
+a {
+    font-family: Bradley Hand, cursive;
+}
+
+li {
+    font-family: Bradley Hand, cursive;
+}
+
+span {
+    font-family: Bradley Hand, cursive;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    text-align: right;
+}
+
+main {
+    padding: 0 30px 100px;
+}
+
+.main__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list__item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid #EB8028;
+    transition: 0.2s;
+}
+.item__img {
+    object-fit: contain;
+    width: 150px;
+}
+
+.list__item a:hover {
+    box-shadow: 1px 1px 4px 4px #0EB07C;
+}
+
+.main__rez {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.rez__img {
+    object-fit: contain;
+    width: 300px;
+}
+
+.main__title--margin {
+    margin-bottom: 50px;
+}
+
+.main__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #0EB07C;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.user input {
+    padding: 10px;
+    border: 1px solid #EB8028;
+    background: inherit;
+    border-radius: 5px;
+    font: inherit;
+    width: 100%;
+    color: #EB8028;
+}
+
+
+
+.user input:focus,
+.user input:active {
+    border: 1px solid #EB8028;
+    outline: none;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+label {
+    display:inline-block ;
+    margin-bottom: 10px;
+}
+
+.address-date {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes color-change3 {
+    0% {
+        background-color: #f9f1c8;
+    }
+  
+    25% {
+        background-color: #f9c8c8;
+    }
+    75% {
+        background-color: #cff9c8;
+      }
+    100% {
+        background-color: #f9f1c8;
+      }
+}
+
+body {
+    animation: color-change3 12s infinite;
+}
+
+.button {
+    width: 10%;
+    padding: 10px;
+    min-width: 300px;
+    cursor: pointer;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    background: #0EB07C;
+    font: inherit;
+    color: #fff;
+}
