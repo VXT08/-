@@ -39,7 +39,7 @@ ul {
     }
   
     50% {
-        background-color: #9ebe64;
+        background-color: #bfe678;
       }
     
       100% {
@@ -53,7 +53,7 @@ ul {
     }
   
     50% {
-        color: #444444;
+        color: rgb(81, 81, 81);
       }
     
       100% {
@@ -91,12 +91,42 @@ h2 {
     line-height: 125%;
    }
 
+h3 { 
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 25px;
+    line-height: 130%;
+   }
+
 p {
     font-family: Bradley Hand, cursive;
 }
 
+@keyframes color-change-link {
+    0% {
+      color: #00a323;
+    }
+  
+    25% {
+        color: #16d733;
+      }
+    
+    75% {
+        color: #29bc4e;
+      }
+    100% {
+        color: #00a323;
+      }
+}
+
 a {
     font-family: Bradley Hand, cursive;
+    text-decoration: none;
+    animation: color-change-link 4s infinite
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#00ff37
 }
 
 li {
@@ -241,10 +271,10 @@ label {
     }
   
     25% {
-        background-color: #f9c8c8;
+        background-color: #cff9c8;
     }
     75% {
-        background-color: #cff9c8;
+        background-color: #ebf9c8;
       }
     100% {
         background-color: #f9f1c8;
