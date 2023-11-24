@@ -31,12 +31,6 @@
         <spanя>У вас обычный образ жизни образ жизни!</span>
         <spanя>Советуем немного осведомиться, для помощи природе</span>
         <p></p>
-        <li class="list__item">
-            <a href="info">
-                <img class="item__img" src="../static/img/greenlight.png" alt="home">
-                <span>Узнать, чем ты можешь помочь природе</span></a>
-            </li>
-
 
         {%elif result >= 300%}
         <img class="rez__img" src="../../static/img/planet_bad.svg" alt="">
@@ -44,13 +38,19 @@
         <spanя>У вас неэкологичный образ жизни!</span>
         <spanя>Советуем как-либо поменять его</span>
         <p></p>
-        <li class="list__item">
-            <a href="info">
-                <img class="item__img" src="../static/img/greenlight.png" alt="home">
-                <span>Узнать, чем ты можешь помочь природе</span></a>
-            </li>
+        
         {%endif%}
+      
     </div>
+    <br>
+    <br>
+    <ul class="list">
+      <li class="list__item">
+        <a target="_blank" href="index">
+          <span>Узнать, чем ты можешь помочь природе</span>
+        </a>
+      </li>
+    </ul>
     {% endblock %}
   </main>
   <footer>

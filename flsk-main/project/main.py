@@ -21,7 +21,7 @@ def info():
 @app.route('/test')
 def test():
     return render_template("test.html")
-app.run()
+
 
 
 def result_calculate(size, lights, device):
@@ -34,7 +34,7 @@ def result_calculate(size, lights, device):
 #Первая страница
 @app.route('/start')
 def start():
-    return render_template('start.html')
+    return render_template("start.html")
 #Вторая страница
 @app.route('/<size>')
 def lights(size):
@@ -61,3 +61,5 @@ def end(size, lights, device):
                                                     int(device)
                                                     )
                         )
+
+app.run()
